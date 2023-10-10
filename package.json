@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "rimraf .bild && tsc",
-    "start": "node build/exercicio1.js",
-    "dev": "ts-node-dev src/exercicio1.ts"
+    "start": "node build/exercicio1a.js",
+    "dev": "ts-node-dev src/exercicio1a.ts"
   },
   "keywords": [],
   "author": "",

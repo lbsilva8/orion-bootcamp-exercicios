@@ -41,6 +41,18 @@ Crie uma página web em que possamos visualizar todas as respostas e coloque o d
 ## Como executar
 
 - Clonar o repositório ou realizar o download do mesmo;
+- Para rodar o exercicio 1-a:
+```
+$ npm run bild
+```
+Em seguida:
+```
+$ npm start
+```
+
+- Para rodar o exercicio 1-b:
+     Abra  o arquivo `index.html` no browser.
+
 
 
 
