@@ -1,0 +1,20 @@
+{
+  "name": "orion_bootcamp_exercicios",
+  "version": "1.0.0",
+  "description": "Repositório para treinamento de exercicios do bootcamp Orion da New rizon",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf .bild && tsc",
+    "start": "node build/exercicio1a.js",
+    "dev": "ts-node-dev src/exercicio1a.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "ts-node-dev": "^2.0.0"
+  }
+}
