@@ -4,9 +4,9 @@
 
 function quantidadeVogal(palavra: string, vogais: string[], quantidade: number, i:number): number{
 
-    var letras = palavra.toUpperCase().split('');
+    let letras = palavra.toUpperCase().split('');
 
-    for (var i = 0; i < letras.length; i++) {
+    for (let i = 0; i < letras.length; i++) {
        // console.log(letras[i])
         if (vogais.includes(letras[i])){
             quantidade = quantidade + 1;
