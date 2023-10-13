@@ -2,9 +2,12 @@
 //A) Dar um exemplo de uso com uma palavra recebida via parâmetro da função.
 
 
-function quantidadeVogal(palavra: string, vogais: string[], quantidade: number, i:number): number{
+function quantidadeVogal(palavra: string): number{
 
-    let letras = palavra.toUpperCase().split('');
+    const vogais: string[] = ['A', 'E', 'I', 'O', 'U']
+    let quantidade: number = 0
+
+    const letras: string[] = palavra.toUpperCase().split('');
 
     for (let i = 0; i < letras.length; i++) {
        // console.log(letras[i])
@@ -18,4 +21,4 @@ function quantidadeVogal(palavra: string, vogais: string[], quantidade: number, 
 }
 
 
-console.log(quantidadeVogal('hello',['A', 'E', 'I', 'O', 'U'],0,0));
+console.log(quantidadeVogal('hello'));

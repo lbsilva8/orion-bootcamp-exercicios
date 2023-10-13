@@ -4,12 +4,11 @@
 
 function contaVogal(palavraInserida: string): number{
 
-    let letra: string[] = palavraInserida.toUpperCase().split('');
+    const letra: string[] = palavraInserida.toUpperCase().split('');
     let contagem:number = 0
     const vogal: string[] = ['A', 'E', 'I', 'O', 'U']
 
     for (let j: number = 0; j < letra.length; j++) {
-       // console.log(letras[i])
         if (vogal.includes(letra[j])){
             contagem = contagem + 1;
         }
