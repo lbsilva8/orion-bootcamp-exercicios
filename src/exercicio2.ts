@@ -28,7 +28,7 @@ const lista: Biografia[] = [
 
 //Paradigma imperativo
 
-function bioByIdImp(id: number) {
+function bioByIdImp(id: number):string {
     for (let i:number  = 0; i < lista.length; i++) {
         if (lista[i].id === id) {
           return lista[i].bio
@@ -57,7 +57,7 @@ console.log(`***[A: Paradigma funcional] A Bio do ID escolhido é: ${bioByIdFun(
 
 //B) Crie uma função que retorne o name do id passado
 //Paradigma imperativo
-function nameByIdImp(id: number) {
+function nameByIdImp(id: number):string {
     for (let i:number  = 0; i < lista.length; i++) {
         if (lista[i].id === id) {
           return lista[i].name
