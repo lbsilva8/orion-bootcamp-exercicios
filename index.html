@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+    <!--Cabeçalho da página-->
+    <header>
+        <div class="corpo-texto">
+            <h1>Exercicios Orion Bootcamp</h1>
+        </div>
+    </header>
+<!--exercicio 1-->
+    <h3><br>Exercício 1<br><br></h3>
+
+    <!--Parte de onde são imputados os dados pelo usuário-->
+    <label for="contVogal">Digite uma palavra:</label>
+    <input type="text" id="contVogal" placeholder="Insira uma palavra">
+    <button onclick="verificaPalavra()">Contar vogal</button>
+    <div><strong>Resposta:</strong> </div>
+    <div id="res"></div>
+
+<!--exercicio 2-->
+    <section>
+        <h3><br>Exercício 2<br><br></h3>
+        <p>
+            Dado o array:<br>
+
+            let lista = new Array<Object> = [ <br>
+            {"id" : 1, "name": "Ada Lovelace", "bio" : "Ada Lovelace, foi uma matemática e escritora inglesa reconhecida por ter escrito o primeiro algoritmo para ser processado por uma máquina"},<br>
+            {"id" : 2, "name": "Alan Turing", "bio" : "Alan Turing foi um matemático, cientista da computação, lógico, criptoanalista, filósofo e biólogo teórico britânico, ele é amplamente considerado o pai da ciência da computação teórica e da inteligência artificial"},<br>
+            {"id" : 3, "name": "Nikola Tesla", "bio" : "Nikola Tesla foi um inventor, engenheiro eletrotécnico e engenheiro mecânico sérvio, mais conhecido por suas contribuições ao projeto do moderno sistema de fornecimento de eletricidade em corrente alternada."},<br>
+            {"id" : 4, "name": "Nicolau Copérnico", "bio": "Nicolau Copérnico foi um astrônomo e matemático polonês que desenvolveu a teoria heliocêntrica do Sistema Solar."}];<br>
+            ];
+        </p>
+        <br>
+    </section>
+    
+ <!--Parte de onde são imputados os dados pelo usuário-->
+    <label for="numeroId">Digite o ID:</label>
+    <input type="number" id="numeroId">
+    <button onclick="bioById()">Verificar a Bio</button>
+    <button onclick="nameById()">Verificar o nome</button>
+    <button onclick="deleteById()">Deletar um item</button>
+    <div><strong>Resposta:</strong> </div>
+    <div id="resposta"></div>
+
+    <br>
+
+    <label for="alteraLista">Digite o ID:</label>
+    <input type="number" id="alteraLista">
+    <label for="novoNome">Novo Nome:</label>
+    <input type="text" id="novoNome">
+    <label for="novaBio">Nova Bio:</label>
+    <input type="text" id="novaBio">
+    <button onclick="alteraById()">Alterar Nome/Bio</button>
+    <div>,<strong>Resposta:</strong></div>
+    <div id="resp"></div>
+
+    <script src="./build/exercicio3.js"></script>
+</body>
+</html>
