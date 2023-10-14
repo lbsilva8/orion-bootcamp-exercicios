@@ -1,4 +1,21 @@
 "use strict";
+//exercicio 1
+function verificaPalavra() {
+    const valorEntrada = document.getElementById('contVogal').value.toLowerCase();
+    const contaVogais = contaVogaisNaPalavra(valorEntrada);
+    const valoresSaida = document.getElementById('res');
+    valoresSaida.innerHTML = `A palavra tem ${contaVogais} vogais.`;
+}
+function contaVogaisNaPalavra(word) {
+    const vogais = ['a', 'e', 'i', 'o', 'u'];
+    let count = 0;
+    for (let i = 0; i < word.length; i++) {
+        if (vogais.includes(word[i])) {
+            count++;
+        }
+    }
+    return count;
+}
 const lista = [
     { "id": 1, "name": "Ada Lovelace", "bio": "Ada Lovelace, foi uma matemática e escritora inglesa reconhecida por ter escrito o primeiro algoritmo para ser processado por uma máquina" },
     { "id": 2, "name": "Alan Turing", "bio": "Alan Turing foi um matemático, cientista da computação, lógico, criptoanalista, filósofo e biólogo teórico britânico, ele é amplamente considerado o pai da ciência da computação teórica e da inteligência artificial" },

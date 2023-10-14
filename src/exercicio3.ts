@@ -1,3 +1,27 @@
+//exercicio 1
+
+function verificaPalavra(): void {
+  const valorEntrada:string = (document.getElementById('contVogal') as HTMLInputElement).value.toLowerCase();
+  const contaVogais:number = contaVogaisNaPalavra(valorEntrada);
+  const valoresSaida = <HTMLDivElement>document.getElementById('res');
+  valoresSaida.innerHTML = `A palavra tem ${contaVogais} vogais.`;
+}
+
+function contaVogaisNaPalavra(word: string): number {
+  const vogais = ['a', 'e', 'i', 'o', 'u'];
+  let count = 0;
+
+  for (let i = 0; i < word.length; i++) {
+    if (vogais.includes(word[i])) {
+      count++;
+    }
+  }
+
+  return count;
+}
+
+
+//exercicio 2
 interface Biografia {
     id: number;
     name: string;
