@@ -49,18 +49,19 @@ Em seguida:
 ```
 $ npm start
 ```
+- Para rodar o exercicio 1-b:
+     Abra  o arquivo `index.html` no browser.
+
 - Para rodar o exercicio 2:
 ```
 $ npm run bild
 ```
 Em seguida:
 ```
-$ npm start2
+$ npm run start2
 ```
-
-- Para rodar o exercicio 1-b:
+- Para rodar o exercicio 3:
      Abra  o arquivo `index.html` no browser.
-
 
 
 
