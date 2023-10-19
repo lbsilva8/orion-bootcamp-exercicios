@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "dev": "ts-node-dev exercicio1a.ts",
+    "dev2": "ts-node-dev exercicio2.ts",
     "build": "rimraf .bild && tsc",
     "start": "node build/exercicio1a.js",
+    "start2": "node build/exercicio2.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
